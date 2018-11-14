@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background-color: #B7B8C9;
+    }
+
+    #wrap {
+        background-color: #4122A4;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 60px;
+        color: #5BD04F;
+    }
+
+    .card {
+        background-image: url("thumb-1920-936862.jpg");
+        background-position: center;
+        /* background-color: aquamarine; */
+        height: 500px;
+    }
+
+    p {
+        font-family: 'Yeseva One', cursive;
+        font-size: 20px;
+        color: black;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <header>
+                    <div id="wrap">
+                        <h1>Friend Finder</h1>
+                    </div>
+                </header>
+                <div class="card">
+                    <div class="card-body">
+
+                        <p>Answer a few basic questions.</p>
+                        <p>Then find the friend with greatest compatibility!!</p>
+
+
+                        <!-- <button type="button" id="start" class="btn btn-primary">START SURVEY</button>   -->
+                        <a href="/survey"><button class="btn btn-lg btn-primary"><span class="fa fa-credit-card"></span>
+                                START SURVEY</button></a>
+                        <br>
+                        <br>
+                        <br>
+                        <!-- <a href="#" class="card-link">API Friendlist</a>
+                      <a href="#" class="card-link">Github Repo</a> -->
+                        <div class="container">
+                            <p>
+                                <a href="/api/friends">API Friends List</a>
+                                |
+                                <a href="https://www.npmjs.com/package/tabl">Github Repo</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Vast+Shadow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    body{
+        background-image: url("thumb-1920-393395.jpg");
+    }
+    .container{
+        background-color: #57AE7A;
+        /* background-image: url("thumb-1920-393395.jpg");  */
+    }
+    h3{
+        font-size: 28px;
+        color: #2613AC;
+        font-family:'Vast Shadow', cursive;
+    }
+
+    h1{
+        font-family: 'Rye', cursive;
+        font-size: 44px;
+        
+    }
+
+    h2{
+        font-family: 'Rye', cursive;
+        font-size: 35px;
+    }
+
+    label{
+        font-size: 20px;
+        font-family: 'Noto Serif', serif;
+        
+       
+    }
+
+    .modal {
+            display: none; 
+            position: fixed;
+            z-index: 1; 
+            padding-top: 100px; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4); 
+        }
+    .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+  
+    #close {
+            color: #aaaaaa;
+            float: right;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+    #modaltext {
+            font-size: 50px;
+            color: #276E14;
+            font-weight: bold;
+        }
+
+    #close:hover,
+    #close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="myModal" class="modal">
+
+
+                    <div class="modal-content" id="modal-content">
+                        <span id="close">Close</span>
+                        <p id="modaltext"></p>
+                    </div>
+                </div>
+
+                <h1>Survey Questions</h1>
+                <hr>
+
+                <h2>About You</h2>
+
+                <label for="name">Name (Required)</label><br>
+                <input type="text" id="name" name="name" class="form" required>
+                <br>
+                <label for="photo">Link to Photo Image(Required)</label><br>
+                <input type="text" id="photo" name="photo" class="form" required>
+                <hr>
+
+                <h3>Question 1</h3>
+                <label for="1">You try to respond to your e-mail as soon as possible and cannot stand a messy inbox.</label><br>
+                <select id="1" class= "chosen" name="1">
+                    <option>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <br>
+
+                <h3>Question 2</h3>
+                <label for="2">You are a relatively reserved and quiet person.</label><br>
+                <select id="2" class= "chosen" name="2">
+                    <option>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <br>
+
+                <h3>Question 3</h3>
+                <label for="3">You do not usually initiate conversations.</label><br>
+                <select id="3" class= "chosen" name="3">
+                    <option>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <br>
+                <h3>Question 4</h3>
+                <label for="4">Being right is more important than being cooperative when it comes to teamwork.</label><br>
+                <select id="4" class= "chosen" name="4">
+                    <option>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <br>
+                <h3>Question 5</h3>
+                <label for="5">In a discussion, truth should be more important than people's sensitivities.</label><br>
+                <select id="5" class= "chosen" name="5">
+                    <option>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <br>
+                <h3>Question 6</h3>
+                <label for="6">An interesting book or a video game is often better than a social event.</label><br>
+                <select id="6" class= "chosen" name="6">
+                    <option>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <br>
+                <h3>Question 7</h3>
+                <label for="7">You rarely worry about how your actions affect other people.</label><br>
+                <select id="7" class= "chosen" name="7">
+                    <option>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <br>
+                <h3>Question 8</h3>
+                <label for="8">You do not let other people influence your actions.</label><br>
+                <select id="8" class= "chosen" name="8">
+                    <option>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <br>
+                <h3>Question 9</h3>
+                <label for="9">You are more of natural improviser than a careful planner.</label><br>
+                <select id="9" class= "chosen" name="9">
+                    <option>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <br>
+                <h3>Question 10</h3>
+                <label for="10">You rarely get carried away by fantasies and ideas.</label><br>
+                <select id="10" class= "chosen" name="10">
+                    <option>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <!-- <button id="submit" type="submit">Submit</button> -->
+                <button id="submit" type="submit" class="btn btn-primary btn-lg btn-block">SUBMIT</button>
+                <footer>
+                    <div class = "container">
+                        <p>
+                            <a href="/api/friends">API Friends List</a>
+                            |
+                            <a href="https://www.npmjs.com/package/tabl">Github Repo</a>
+                        </p>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script>
+       
+
+        
+        $(document).ready(function () {
+
+            $("#submit").on("click", (event) => {
+                event.preventDefault();
+                var name = $("#name").val();
+                var photo = $("#photo").val();
+                var q1 = $("#1").val();
+                var q2 = $("#2").val();
+                var q3 = $("#3").val();
+                var q4 = $("#4").val();
+                var q5 = $("#5").val();
+                var q6 = $("#6").val();
+                var q7 = $("#7").val();
+                var q8 = $("#8").val();
+                var q9 = $("#9").val();
+                var q10 = $("#10").val();
+
+                var friend = {
+                    name: name,
+                    photo: photo,
+                    scores: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
+                }
+                console.log("sending: " + friend);
+                $.post("/api/friends", friend, (res) => {
+                   
+                    var img = $("<img>");
+                    img.attr("src", res.photo);
+                    $("#modal-content").append(img);
+                    console.log(res);
+                    $("#myModal").css("display", "block");
+                    $("#modaltext").text(
+                        "You matched with " +
+                        res.name + "!!!!!");
+                    alert(res.name);
+                    console.log(res);
+                });
+            });
+
+            $("#close").click(function () {
+                $("#myModal").css("display", "none");
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
