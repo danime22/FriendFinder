@@ -118,8 +118,8 @@
 
                 <h3>Question 1</h3>
                 <label for="1">You try to respond to your e-mail as soon as possible and cannot stand a messy inbox.</label><br>
-                <select id="1" class= "chosen" name="1">
-                    <option>Select an Option</option>
+                <select id="1" class="chosen" name="1">
+                    <option disabled="disabled" selected="selected" value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -131,8 +131,8 @@
 
                 <h3>Question 2</h3>
                 <label for="2">You are a relatively reserved and quiet person.</label><br>
-                <select id="2" class= "chosen" name="2">
-                    <option>Select an Option</option>
+                <select id="2" class="chosen" name="2">
+                    <option disabled="disabled" selected="selected" value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -144,8 +144,8 @@
 
                 <h3>Question 3</h3>
                 <label for="3">You do not usually initiate conversations.</label><br>
-                <select id="3" class= "chosen" name="3">
-                    <option>Select an Option</option>
+                <select id="3" class="chosen" name="3">
+                    <option disabled="disabled" selected="selected" value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -156,8 +156,8 @@
                 <br>
                 <h3>Question 4</h3>
                 <label for="4">Being right is more important than being cooperative when it comes to teamwork.</label><br>
-                <select id="4" class= "chosen" name="4">
-                    <option>Select an Option</option>
+                <select id="4" class="chosen" name="4">
+                    <option disabled="disabled" selected="selected" value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -168,8 +168,8 @@
                 <br>
                 <h3>Question 5</h3>
                 <label for="5">In a discussion, truth should be more important than people's sensitivities.</label><br>
-                <select id="5" class= "chosen" name="5">
-                    <option>Select an Option</option>
+                <select id="5" class="chosen" name="5">
+                    <option disabled="disabled" selected="selected" value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -180,8 +180,8 @@
                 <br>
                 <h3>Question 6</h3>
                 <label for="6">An interesting book or a video game is often better than a social event.</label><br>
-                <select id="6" class= "chosen" name="6">
-                    <option>Select an Option</option>
+                <select id="6" class="chosen" name="6">
+                    <option disabled="disabled" selected="selected" value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -192,8 +192,8 @@
                 <br>
                 <h3>Question 7</h3>
                 <label for="7">You rarely worry about how your actions affect other people.</label><br>
-                <select id="7" class= "chosen" name="7">
-                    <option>Select an Option</option>
+                <select id="7" class="chosen" name="7">
+                    <option disabled="disabled" selected="selected" value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -204,8 +204,8 @@
                 <br>
                 <h3>Question 8</h3>
                 <label for="8">You do not let other people influence your actions.</label><br>
-                <select id="8" class= "chosen" name="8">
-                    <option>Select an Option</option>
+                <select id="8" class="chosen" name="8">
+                    <option disabled="disabled" selected="selected" value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -216,8 +216,8 @@
                 <br>
                 <h3>Question 9</h3>
                 <label for="9">You are more of natural improviser than a careful planner.</label><br>
-                <select id="9" class= "chosen" name="9">
-                    <option>Select an Option</option>
+                <select id="9" class="chosen" name="9">
+                    <option disabled="disabled" selected="selected" value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -228,8 +228,8 @@
                 <br>
                 <h3>Question 10</h3>
                 <label for="10">You rarely get carried away by fantasies and ideas.</label><br>
-                <select id="10" class= "chosen" name="10">
-                    <option>Select an Option</option>
+                <select id="10" class="chosen" name="10">
+                    <option disabled="disabled" selected="selected" value="">Select an Option</option>
                     <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -242,11 +242,11 @@
                 <!-- <button id="submit" type="submit">Submit</button> -->
                 <button id="submit" type="submit" class="btn btn-primary btn-lg btn-block">SUBMIT</button>
                 <footer>
-                    <div class = "container">
+                    <div class="container">
                         <p>
                             <a href="/api/friends">API Friends List</a>
                             |
-                            <a href="https://www.npmjs.com/package/tabl">Github Repo</a>
+                            <a href="https://github.com/danime22/FriendFinder">Github Repo</a>
                         </p>
                     </div>
                 </footer>
@@ -259,15 +259,15 @@
 
 
     <script>
-       
 
-        
+
+
         $(document).ready(function () {
 
             $("#submit").on("click", (event) => {
                 event.preventDefault();
-                var name = $("#name").val();
-                var photo = $("#photo").val();
+                var name = $("#name").val().trim();
+                var photo = $("#photo").val().trim();
                 var q1 = $("#1").val();
                 var q2 = $("#2").val();
                 var q3 = $("#3").val();
@@ -279,25 +279,45 @@
                 var q9 = $("#9").val();
                 var q10 = $("#10").val();
 
-                var friend = {
-                    name: name,
-                    photo: photo,
-                    scores: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
+                if (name.length < 1 ||
+                    photo.length < 1 ||
+                    q1 == null ||
+                    q2 == null ||
+                    q3 == null ||
+                    q4 == null ||
+                    q5 == null ||
+                    q6 == null ||
+                    q7 == null ||
+                    q8 == null ||
+                    q9 == null ||
+                    q10 == null) {
+                    alert("Please fill out the form completely.");
                 }
-                console.log("sending: " + friend);
-                $.post("/api/friends", friend, (res) => {
-                   
-                    var img = $("<img>");
-                    img.attr("src", res.photo);
-                    $("#modal-content").append(img);
-                    console.log(res);
-                    $("#myModal").css("display", "block");
-                    $("#modaltext").text(
-                        "You matched with " +
-                        res.name + "!!!!!");
-                    alert(res.name);
-                    console.log(res);
-                });
+                else if (!photo.toUpperCase().startsWith("HTTP")) {
+                    alert("Please enter a valid URL for your photo.")
+                }
+                else {
+
+                    var friend = {
+                        name: name,
+                        photo: photo,
+                        scores: [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10]
+                    }
+                    console.log("sending: " + friend);
+                    $.post("/api/friends", friend, (res) => {
+
+                        var img = $("<img>");
+                        img.attr("src", res.photo);
+                        $("#modal-content").append(img);
+                        console.log(res);
+                        $("#myModal").css("display", "block");
+                        $("#modaltext").text(
+                            "You matched with " +
+                            res.name + "!!!!!");
+                        alert(res.name);
+                        console.log(res);
+                    });
+                }
             });
 
             $("#close").click(function () {
